@@ -1,0 +1,109 @@
+.section {
+  padding: 60px 20px;
+  background: rgba(41, 37, 36, 0.2);
+  border-top: 1px solid rgba(68, 64, 60, 0.3);
+  border-bottom: 1px solid rgba(68, 64, 60, 0.3);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.icon {
+  font-size: 32px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.sectionBadge {
+  margin-left: auto;
+  font-size: 10px;
+  color: #78716c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(68, 64, 60, 0.3);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardStep {
+  font-size: 10px;
+  color: #78716c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fcd34d;
+  margin-top: 4px;
+}
+
+.cardIcon {
+  font-size: 24px;
+}
+
+.cardDesc {
+  font-size: 12px;
+  color: #a8a29e;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Colors */
+.red { border-color: rgba(127, 29, 29, 0.4); background: rgba(127, 29, 29, 0.1); }
+.gray { border-color: rgba(75, 85, 99, 0.4); background: rgba(75, 85, 99, 0.1); }
+.stone { border-color: rgba(68, 64, 60, 0.4); background: rgba(68, 64, 60, 0.1); }
+.amber { border-color: rgba(180, 83, 9, 0.4); background: rgba(180, 83, 9, 0.1); }
+.pink { border-color: rgba(190, 24, 93, 0.4); background: rgba(190, 24, 93, 0.1); }
+.blue { border-color: rgba(29, 78, 216, 0.4); background: rgba(29, 78, 216, 0.1); }
+.orange { border-color: rgba(194, 65, 12, 0.4); background: rgba(194, 65, 12, 0.1); }
+.green { border-color: rgba(21, 128, 61, 0.4); background: rgba(21, 128, 61, 0.1); }
+.purple { border-color: rgba(126, 34, 206, 0.4); background: rgba(126, 34, 206, 0.1); }
+.indigo { border-color: rgba(67, 56, 202, 0.4); background: rgba(67, 56, 202, 0.1); }
+.gold { border-color: rgba(202, 138, 4, 0.4); background: rgba(202, 138, 4, 0.1); }
+.dark { border-color: rgba(68, 64, 60, 0.5); background: rgba(68, 64, 60, 0.2); }

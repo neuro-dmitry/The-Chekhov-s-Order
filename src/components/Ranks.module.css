@@ -1,0 +1,81 @@
+.section {
+  padding: 60px 20px;
+  background: rgba(28, 25, 23, 0.3);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.icon {
+  font-size: 32px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.sectionBadge {
+  margin-left: auto;
+  font-size: 10px;
+  color: #78716c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card {
+  background: rgba(41, 37, 36, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(68, 64, 60, 0.3);
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(180, 83, 9, 0.3);
+}
+
+.cardIcon {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fcd34d;
+}
+
+.cardDesc {
+  font-size: 14px;
+  color: #a8a29e;
+  margin-top: 4px;
+}

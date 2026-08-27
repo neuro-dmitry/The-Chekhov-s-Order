@@ -1,0 +1,183 @@
+.section {
+  padding: 60px 20px;
+  background: rgba(41, 37, 36, 0.3);
+  border-top: 1px solid rgba(68, 64, 60, 0.3);
+  border-bottom: 1px solid rgba(68, 64, 60, 0.3);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.icon {
+  font-size: 32px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.sectionBadge {
+  margin-left: auto;
+  font-size: 10px;
+  color: #78716c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.block {
+  margin-bottom: 40px;
+}
+
+.block:last-child {
+  margin-bottom: 0;
+}
+
+.blockTitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fcd34d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(68, 64, 60, 0.3);
+  padding-bottom: 12px;
+}
+
+.blockIcon {
+  font-size: 24px;
+}
+
+.medalsGrid {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .medalsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.medalCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(68, 64, 60, 0.3);
+  background: rgba(28, 25, 23, 0.5);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.medalCard:hover {
+  transform: translateX(4px);
+}
+
+.medalIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.medalInfo {
+  flex: 1;
+}
+
+.medalName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fcd34d;
+}
+
+.medalDesc {
+  font-size: 13px;
+  color: #a8a29e;
+  margin-top: 2px;
+}
+
+/* Medal colors */
+.bronze { border-left: 4px solid #b45309; }
+.bronze:hover { border-color: #d97706; }
+
+.silver { border-left: 4px solid #78716c; }
+.silver:hover { border-color: #a8a29e; }
+
+.gold { border-left: 4px solid #f59e0b; }
+.gold:hover { border-color: #fbbf24; }
+
+.purple { border-left: 4px solid #7c3aed; }
+.purple:hover { border-color: #a78bfa; }
+
+.red { border-left: 4px solid #dc2626; }
+.red:hover { border-color: #f87171; }
+
+.orange { border-left: 4px solid #ea580c; }
+.orange:hover { border-color: #fb923c; }
+
+.ordersGrid {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .ordersGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.orderCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: 2px solid rgba(68, 64, 60, 0.3);
+  background: rgba(28, 25, 23, 0.5);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.orderCard:hover {
+  transform: scale(1.02);
+}
+
+.orderIcon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.orderInfo {
+  flex: 1;
+}
+
+.orderName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.orderDesc {
+  font-size: 14px;
+  color: #a8a29e;
+  margin-top: 2px;
+}
+
+.hero {
+  border-color: rgba(245, 158, 11, 0.5);
+  background: rgba(245, 158, 11, 0.05);
+}
+
+.hero:hover {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+}

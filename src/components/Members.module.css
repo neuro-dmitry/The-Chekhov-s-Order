@@ -1,0 +1,244 @@
+.section {
+  padding: 60px 20px;
+  background: rgba(28, 25, 23, 0.5);
+  border-bottom: 1px solid rgba(68, 64, 60, 0.3);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.icon {
+  font-size: 32px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.sectionBadge {
+  margin-left: auto;
+  font-size: 10px;
+  color: #78716c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px 40px;
+  margin-bottom: 32px;
+  padding: 20px;
+  background: rgba(41, 37, 36, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(68, 64, 60, 0.2);
+}
+
+.stat {
+  text-align: center;
+}
+
+.statValue {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: #78716c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.line {
+  width: 1px;
+  height: 40px;
+  background: rgba(68, 64, 60, 0.3);
+}
+
+.membersGrid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .membersGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .membersGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.memberCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(68, 64, 60, 0.3);
+  background: rgba(28, 25, 23, 0.5);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.memberCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(180, 83, 9, 0.3);
+}
+
+.memberAvatar {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.memberInitial {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(180, 83, 9, 0.3);
+  border: 2px solid rgba(245, 158, 11, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.memberInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.memberName {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fcd34d;
+}
+
+.memberRank {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 12px;
+  border-radius: 9999px;
+  font-weight: 600;
+  margin: 4px 0;
+  letter-spacing: 0.3px;
+}
+
+.rankGrandMaster {
+  background: rgba(245, 158, 11, 0.3);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  font-size: 13px;
+  padding: 3px 14px;
+}
+
+.rankMaster {
+  background: rgba(139, 92, 246, 0.25);
+  color: #a78bfa;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.rankKnight {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.rankShlang {
+  background: rgba(107, 114, 128, 0.2);
+  color: #9ca3af;
+  border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+.rankDefault {
+  background: rgba(68, 64, 60, 0.3);
+  color: #a8a29e;
+  border: 1px solid rgba(68, 64, 60, 0.3);
+}
+
+.memberReligion {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.religionIcon {
+  font-size: 14px;
+}
+
+.religionName {
+  font-size: 12px;
+  color: #78716c;
+}
+
+/* Show more button */
+.showMoreWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.showMoreBtn {
+  padding: 12px 40px;
+  background: transparent;
+  color: #fcd34d;
+  border: 2px solid rgba(245, 158, 11, 0.3);
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.showMoreBtn:hover {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.6);
+  transform: scale(1.02);
+}
+
+/* Responsive stats */
+@media (max-width: 640px) {
+  .stats {
+    gap: 12px 20px;
+    padding: 16px;
+  }
+  
+  .statValue {
+    font-size: 24px;
+  }
+  
+  .statLabel {
+    font-size: 10px;
+  }
+
+  .line {
+    height: 30px;
+  }
+
+  .showMoreBtn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
