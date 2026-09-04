@@ -7,14 +7,14 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.divider}>
           <span className={styles.line}></span>
-          <span className={styles.motto}>ХАЙ ЧЕХОВ</span>
+          <span className={styles.motto}>Орден Чехова</span>
           <span className={styles.line}></span>
         </div>
         <p className={styles.text}>
-          Орден Чехова • 16 школа • г. Екатеринбург
+          Основан в 2025г • 16 школа • г. Екатеринбург
         </p>
         <p className={styles.copy}>
-          © {new Date().getFullYear()}-{new Date().getFullYear()+1} • Все права защищены • Azov
+          © {new Date().getFullYear()}-{new Date().getFullYear()+1} • Все права защищены • Ачех...
         </p>
       </div>
     </footer>

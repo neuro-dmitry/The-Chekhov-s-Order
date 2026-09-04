@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
-import logo from "../../assets/logo.png"
+import logo from "/src/assets/logo.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,8 +11,9 @@ const Header = () => {
     { label: 'Иерархия', href: '#hierarchy' },
     { label: 'Религии', href: '#religions' },
     { label: 'Награды', href: '#awards' },
-    { label: 'Состав', href: '#members' },
+    // { label: 'Состав', href: '#members' },
     // { label: 'Чехов Град', href: '#minecraft' },
+    { label: 'ЧСО', href: '#BLO' },
   ];
 
   return (
@@ -22,7 +23,7 @@ const Header = () => {
           <img className={styles.logo} src={logo}></img>
           <div>
             <h1 className={styles.title}>ОРДЕН ЧЕХОВА</h1>
-            <p className={styles.subtitle}>ХАЙ ЧЕХОВ!</p>
+            <p className={styles.subtitle}>Марка Пудова в президенты!</p>
           </div>
         </a>
 

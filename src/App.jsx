@@ -8,6 +8,7 @@ import Ranks from './components/Ranks/Ranks';
 import Awards from './components/Awards/Awards';
 import Members from './components/Members/Members';
 import Minecraft from './components/Minecraft/Minecraft';
+import BLO from './components/BLO/BLO';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
@@ -21,8 +22,9 @@ const App = () => {
         <Hierarchy />
         <Religions />
         <Awards />
-        <Members />
+        {/* <Members /> */}
         {/* <Minecraft /> */}
+        <BLO />
         <Footer />
       </main>
     </div>

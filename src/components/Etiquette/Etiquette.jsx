@@ -15,21 +15,21 @@ const Etiquette = () => {
           <div className={styles.card}>
             <h3 className={styles.cardTitle}>
               <span className={styles.cardIcon}>🤝</span>
-              Ритуал приветствия
+              Ритуал приветствия «Брежневская любовь»
             </h3>
             <ol className={styles.list}>
-              <li>Встать друг перед другом по стойке смирно, пятки и носки вместе</li>
+              <li>Два человека встают друг напротив друга <span className={styles.highlight}>(стойка свободная)</span></li>
               <li>
-                Встать на носки и развести пятки в стороны, одновременно поднимая правую руку и сказать{' '}
-                <span className={styles.highlight}>«ХАЙ»</span>
+                Производится рукопожатие с {' '}
+                <span className={styles.highlight}>«братским объятием»</span>
               </li>
               <li>
-                Пожать руку, резко свести пятки и встать на полную стопу, сказать{' '}
-                <span className={styles.highlight}>«ЧЕХОВ»</span>
+                Во время рукопожатия производится имитация поцелуя в щеку {' '}
+                <span className={styles.highlight}>(обязательно озвучка)</span>
               </li>
             </ol>
             <div className={styles.note}>
-              <span className={styles.noteLabel}>Неофициально:</span> просто поднять руку и сказать «хай чехов»
+              <span className={styles.noteLabel}>Неофициально:</span> рукопожатие с похлопыванием свободной рукой по плечу того, с кем здороваетесь
             </div>
           </div>
 
@@ -40,17 +40,17 @@ const Etiquette = () => {
             </h3>
             <ul className={styles.list}>
               <li>
-                <span className={styles.label}>Субординация:</span> подъебывать можно только равных и младших по званию
+                <span className={styles.label}>Субординация:</span> подкалывать можно только равных и младших по званию
               </li>
               <li>
-                <span className={styles.label}>Культура речи:</span> чем меньше матов и больше джентльменских слов, тем лучше
+                <span className={styles.label}>Культура речи:</span> обилие матов не красит, чем меньше матов и больше джентльменских слов, тем лучше
               </li>
               <li>
-                <span className={styles.label}>Щедрость:</span> всегда делись подиком с другим, если у него нечего курить
+                <span className={styles.label}>Щедрость:</span> один из главных принципов Ордена, всегда делись с другом
               </li>
             </ul>
             <div className={styles.warning}>
-              ⚠️ Опущенным запрещено жать руку — кик из ордена без суда
+              ⚠️ Зарпещено распространение внутренней информации о планах ордена - возбуждение дела о переведении в ЧСО 3-его уровня
             </div>
           </div>
         </div>

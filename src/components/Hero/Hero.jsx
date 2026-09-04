@@ -1,16 +1,22 @@
 import React from 'react';
 import styles from './Hero.module.css';
-import logo from "../../assets/logo.png"
+import logo from "/src/assets/chehov.png"
+
+import { quote } from '/src/data.json';
 
 const Hero = () => {
+
+  const randomQuote = quote[Math.floor(Math.random() * quote.length)];
+
+
   return (
     <section className={styles.hero} id="hero">
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <img className={styles.logo} src={logo}></img>
         <h1 className={styles.title}>ОРДЕН ЧЕХОВА</h1>
-        <p className={styles.quote}>«А хули нет-то?»</p>
-        <p className={styles.subtitle}>Ебланы, стремящиеся сделать потужную школьную жизнь чуть веселее</p>
+        <p className={styles.quote}>«{randomQuote}»</p>
+        <p className={styles.subtitle}>Неофициальное объединение учеников 16 школы, призванное сделать нудную школьную жизнь веселей</p>
         <div className={styles.buttons}>
           <a
             className={styles.btnOutline}
