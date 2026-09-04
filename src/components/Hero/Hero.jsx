@@ -16,7 +16,7 @@ const Hero = () => {
         <img className={styles.logo} src={logo}></img>
         <h1 className={styles.title}>ОРДЕН ЧЕХОВА</h1>
         <p className={styles.quote}>«{randomQuote}»</p>
-        <p className={styles.subtitle}>Неофициальное объединение учеников 16 школы, призванное сделать нудную школьную жизнь веселей</p>
+        <p className={styles.subtitle}>Неофициальное объединение учеников 16 школы, призванное сделать школьную жизнь чуть интересней</p>
         <div className={styles.buttons}>
           <a
             className={styles.btnOutline}

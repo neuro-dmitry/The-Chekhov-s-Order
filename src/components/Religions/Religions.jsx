@@ -10,7 +10,7 @@ const Religions = () => {
         <div className={styles.sectionHeader}>
           <span className={styles.icon}>⛪</span>
           <h2 className={styles.sectionTitle}>Религии Ордена</h2>
-          <span className={styles.sectionBadge}>Две веры</span>
+          <span className={styles.sectionBadge}>Три веры</span>
         </div>
         <p className={styles.description}>
           Каждый член может выбирать и менять религию по своему желанию.
