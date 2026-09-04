@@ -1,54 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './Awards.module.css';
 
-const Awards = () => {
-  const medals = [
-    {
-      name: 'Медаль «Вандалеева» 1 ст.',
-      desc: 'Выдается за принятие участия в завозах',
-      icon: '🥉',
-      class: 'bronze'
-    },
-    {
-      name: 'Медаль «Вандалеева» 2 ст.',
-      desc: 'Выдается за активное принятие участия в завозах',
-      icon: '🥈',
-      class: 'silver'
-    },
-    {
-      name: 'Медаль «Вандалеева» 3 ст.',
-      desc: 'Выдается за проведение завозов',
-      icon: '🥇',
-      class: 'gold'
-    },
-    {
-      name: 'Медаль «Укратитель штаба»',
-      desc: 'Выдается за украшение штаба',
-      icon: '🏠',
-      class: 'purple'
-    },
-    {
-      name: 'Медаль «Azov»',
-      desc: 'Выдается за какой-то личный крутой завоз',
-      icon: '🌟',
-      class: 'red'
-    },
-    {
-      name: 'Медаль «Ебать ты тип»',
-      desc: 'Выдается за какой-то ебанутейший личный завоз',
-      icon: '🔥',
-      class: 'orange'
-    },
-  ];
+import {medals, orders} from '/src/data.json';
 
-  const orders = [
-    {
-      name: 'Герой Ордена',
-      desc: 'Выдается за поступок, прославивший орден',
-      icon: '⚜️',
-      class: 'hero'
-    },
-  ];
+const Awards = () => {
 
   return (
     <section id="awards" className={styles.section}>

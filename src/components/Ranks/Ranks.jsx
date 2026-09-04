@@ -1,15 +1,9 @@
 import React from 'react';
 import styles from './Ranks.module.css';
 
+import { ranks } from '/src/data.json';
+
 const Ranks = () => {
-  const ranks = [
-    { name: 'Дырявая ложка', desc: 'Опущенный ордена. Зашкваренный уебок.', icon: '🥄' },
-    { name: 'Шланг', desc: 'Новичок. Не прошел испытание хуем.', icon: '💧' },
-    { name: 'Рыцарь', desc: 'Полноправный член ордена.', icon: '⚔️' },
-    { name: 'Магистр', desc: 'Доверенное лицо ордена.', icon: '📜' },
-    { name: 'Великий магистр', desc: 'Герой ордена или основатель.', icon: '👑' },
-    { name: 'Арханел', desc: 'Бывшие великие магистры, ушедшие на небеса универа.', icon: '✨' },
-  ];
 
   return (
     <section id="ranks" className={styles.section}>

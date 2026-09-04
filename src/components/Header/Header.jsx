@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
-import logo from "../assets/logo.png"
+import logo from "../../assets/logo.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
     { label: 'Этикет', href: '#etiquette' },
-    { label: 'Религии', href: '#religions' },
-    { label: 'Иерархия', href: '#hierarchy' },
     { label: 'Звания', href: '#ranks' },
+    { label: 'Иерархия', href: '#hierarchy' },
+    { label: 'Религии', href: '#religions' },
     { label: 'Награды', href: '#awards' },
     { label: 'Состав', href: '#members' },
-    { label: 'Чехов Град', href: '#minecraft' },
+    // { label: 'Чехов Град', href: '#minecraft' },
   ];
 
   return (

@@ -1,27 +1,10 @@
 import React, { useState } from 'react';
 import styles from './Members.module.css';
 
+import { members } from '/src/data.json';
+
 const Members = () => {
   const [showAll, setShowAll] = useState(false);
-
-  const members = [
-    { name: 'Azov', rank: 'Великий магистр', religion: 'Кониянство' },
-    { name: 'Ворон', rank: 'Магистр', religion: 'Чеховианство' },
-    { name: 'Шаман', rank: 'Магистр', religion: 'Кониянство' },
-    { name: 'Медведь', rank: 'Магистр', religion: 'Чеховианство' },
-    { name: 'Рыжий', rank: 'Рыцарь', religion: 'Чеховианство' },
-    { name: 'Кот', rank: 'Рыцарь', religion: 'Кониянство' },
-    { name: 'Док', rank: 'Рыцарь', religion: 'Чеховианство' },
-    { name: 'Лис', rank: 'Рыцарь', religion: 'Кониянство' },
-    { name: 'Граф', rank: 'Шланг', religion: 'Чеховианство' },
-    { name: 'Сталкер', rank: 'Шланг', religion: 'Кониянство' },
-    { name: 'Барс', rank: 'Рыцарь', religion: 'Кониянство' },
-    { name: 'Волк', rank: 'Рыцарь', religion: 'Чеховианство' },
-    { name: 'Сокол', rank: 'Шланг', religion: 'Кониянство' },
-    { name: 'Енот', rank: 'Шланг', religion: 'Чеховианство' },
-    { name: 'Тигр', rank: 'Рыцарь', religion: 'Кониянство' },
-    { name: 'Медведь', rank: 'Магистр', religion: 'Чеховианство' },
-  ];
 
   // Порядок званий для сортировки
   const rankOrder = {

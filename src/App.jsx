@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Etiquette from './components/Etiquette';
-import Religions from './components/Religions';
-import Hierarchy from './components/Hierarchy';
-import Ranks from './components/Ranks';
-import Awards from './components/Awards';
-import Members from './components/Members';
-import Minecraft from './components/Minecraft';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Etiquette from './components/Etiquette/Etiquette';
+import Religions from './components/Religions/Religions';
+import Hierarchy from './components/Hierarchy/Hierarchy';
+import Ranks from './components/Ranks/Ranks';
+import Awards from './components/Awards/Awards';
+import Members from './components/Members/Members';
+import Minecraft from './components/Minecraft/Minecraft';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -17,12 +17,12 @@ const App = () => {
       <main>
         <Hero />
         <Etiquette />
-        <Religions />
-        <Hierarchy />
         <Ranks />
+        <Hierarchy />
+        <Religions />
         <Awards />
         <Members />
-        <Minecraft />
+        {/* <Minecraft /> */}
         <Footer />
       </main>
     </div>
